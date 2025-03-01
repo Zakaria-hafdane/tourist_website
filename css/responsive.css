@@ -130,7 +130,7 @@
 
     .test-row, .about-row, .contact-row{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: auto auto auto auto;
         gap: 2rem;
     }
 
@@ -143,7 +143,16 @@
                 align-items: center;
     }
     .about-left{
+        display: flex;
+        flex-direction: column; /* Stack title above content */
+        align-items: center; /* Center the title */
+        text-align: center;
+        width: 100%;
         margin: 0;
+    }
+    .about-left h1 {
+        font-size: 2rem; /* Adjust size if needed */
+        margin-bottom: 10px; /* Space below title */
     }
     .facts-row{
         grid-template-columns: repeat(4, 1fr);

@@ -782,12 +782,62 @@ header.header-sm{
 
 /* ### ABOUT PAGE ### */
 /* about */
-.about-right .text{
-    margin-bottom: 1rem;
+/* Main container for each section */
+.tour-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(107, 69, 69); /* Background like the reference */
+    padding: 20px;
+    border-radius: 10px;
+    gap: 30px;
+    max-width: 900px;
+    margin: 20px auto; /* Space between sections */
 }
-.about-right h2{
-    margin-bottom: 2.5rem;
+
+/* Styling for images */
+.tour-container img {
+    width: 450px; /* Adjust size */
+    height: auto;
+    border-radius: 10px;
 }
+
+/* Styling for text container */
+.tour-details {
+    color: white; /* White text */
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Headings */
+.tour-details h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.tour-details p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Read more link */
+.tour-details a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+}
+
+.tour-details a:hover {
+    color: #ccc; /* Hover effect */
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
 
 /* facts */
 #facts{
