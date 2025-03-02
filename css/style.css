@@ -42,6 +42,25 @@
 }
 
 /* navbar side menu */
+@media (max-width: 767px) {
+    #navbar-show-btn {
+        display: block !important;
+    }
+
+    #navbar-collapse {
+        display: none; /* Hide menu by default */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: black; /* Change based on your design */
+    }
+
+    .show-navbar {
+        display: block !important; /* Class added via JavaScript to show menu */
+    }
+}
+
 #navbar-collapse{
     background-color: var(--green);
     position: fixed;
